@@ -1,0 +1,559 @@
+{
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Glog.AI",
+          "organization": "Glog.AI",
+          "fullName": "Glog, Making software more secure",
+          "version": "1.0.0",
+          "semanticVersion": "1.0.0",
+          "informationUri": "https://www.glog.ai",
+          "rules": [
+            {
+              "id": "glog-8fbdff15-fcb3-4f44-8abb-8ca22acccbd8",
+              "help": {
+                "text": "",
+                "markdown": "### Description\n\nThe vulnerability arises from the use of the MD5 hashing algorithm for security purposes. MD5 is considered cryptographically broken and unsuitable for further use due to its vulnerability to collision attacks. In Python, the `hashlib` library provides a way to use MD5, but it should not be used for security-sensitive applications. The `usedforsecurity=False` flag is a consideration to indicate that the hash is not used for security purposes, but this does not mitigate the inherent weaknesses of MD5.\n\n### General Mitigation Advice\n\n1. **Avoid Using MD5 for Security**: Replace MD5 with a more secure hashing algorithm such as SHA-256 or SHA-3.\n2. **Use `hashlib` Securely**: When using the `hashlib` library, prefer secure algorithms like SHA-256.\n3. **Review Code for Security**: Regularly review and update your code to use secure cryptographic practices.\n\n### Source Code Fix Recommendation\n\nReplace the use of MD5 with a more secure hashing algorithm, such as SHA-256:\n\n```python\nimport hashlib\n\n# Original insecure code\n# md5 = hashlib.md5()\n\n# Secure code using SHA-256\nsha256 = hashlib.sha256()\n```\n\n### Library Dependencies\n\nTo execute the code example properly, the following library is required:\n\n- `hashlib`: This is a built-in library in Python, so no additional installation is necessary.\n\n### Relevant OWASP Resources\n\n- [OWASP Cryptographic Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)\n- [OWASP Top Ten 2021 - A03:2021-Injection](https://owasp.org/Top10/A03_2021-Injection/)\n\n### Common Weakness Enumeration (CWE)\n\n- [CWE-327: Use of a Broken or Risky Cryptographic Algorithm](https://cwe.mitre.org/data/definitions/327.html)"
+              },
+              "properties": {
+                "tags": [
+                  "B324"
+                ]
+              }
+            },
+            {
+              "id": "glog-64b79ed8-fc5f-4c66-aeca-2dfafcfaea59",
+              "help": {
+                "text": "",
+                "markdown": "### Description\n\nThe vulnerability arises from the use of the MD5 hashing algorithm for security purposes. MD5 is considered cryptographically broken and unsuitable for further use due to its vulnerability to collision attacks. In Python, the `hashlib` library provides a way to use MD5, but it should not be used for security-sensitive applications. The `usedforsecurity=False` flag is a consideration to indicate that the hash is not used for security purposes, but this does not mitigate the inherent weaknesses of MD5.\n\n### General Mitigation Advice\n\n1. **Avoid Using MD5 for Security**: Replace MD5 with a more secure hashing algorithm such as SHA-256 or SHA-3.\n2. **Use `hashlib` Securely**: When using the `hashlib` library, prefer secure algorithms like SHA-256.\n3. **Review Code for Security**: Regularly review and update your code to use secure cryptographic practices.\n\n### Source Code Fix Recommendation\n\nReplace the use of MD5 with a more secure hashing algorithm, such as SHA-256:\n\n```python\nimport hashlib\n\n# Original insecure code\n# md5 = hashlib.md5()\n\n# Secure code using SHA-256\nsha256 = hashlib.sha256()\n```\n\n### Library Dependencies\n\nTo execute the code example properly, the following library is required:\n\n- `hashlib`: This is a built-in library in Python, so no additional installation is necessary.\n\n### Relevant OWASP Resources\n\n- [OWASP Cryptographic Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)\n- [OWASP Top Ten 2021 - A03:2021-Injection](https://owasp.org/Top10/A03_2021-Injection/)\n\n### Common Weakness Enumeration (CWE)\n\n- [CWE-327: Use of a Broken or Risky Cryptographic Algorithm](https://cwe.mitre.org/data/definitions/327.html)"
+              },
+              "properties": {
+                "tags": [
+                  "B324"
+                ]
+              }
+            },
+            {
+              "id": "glog-677ff6fd-8e8a-4483-8d3b-0a1609c6ebf2",
+              "help": {
+                "text": "",
+                "markdown": "### Description\n\nThe vulnerability arises from the use of the MD5 hashing algorithm for security purposes. MD5 is considered cryptographically broken and unsuitable for further use due to its vulnerability to collision attacks. In Python, the `hashlib` library provides a way to use MD5, but it should not be used for security-sensitive applications. The `usedforsecurity=False` flag is a consideration to indicate that the hash is not used for security purposes, but this does not mitigate the inherent weaknesses of MD5.\n\n### General Mitigation Advice\n\n1. **Avoid Using MD5 for Security**: Replace MD5 with a more secure hashing algorithm such as SHA-256 or SHA-3.\n2. **Use `hashlib` Securely**: When using the `hashlib` library, prefer secure algorithms like SHA-256.\n3. **Review Code for Security**: Regularly review and update your code to use secure cryptographic practices.\n\n### Source Code Fix Recommendation\n\nReplace the use of MD5 with a more secure hashing algorithm, such as SHA-256:\n\n```python\nimport hashlib\n\n# Original insecure code\n# md5 = hashlib.md5()\n\n# Secure code using SHA-256\nsha256 = hashlib.sha256()\n```\n\n### Library Dependencies\n\nTo execute the code example properly, the following library is required:\n\n- `hashlib`: This is a built-in library in Python, so no additional installation is necessary.\n\n### Relevant OWASP Resources\n\n- [OWASP Cryptographic Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)\n- [OWASP Top Ten 2021 - A03:2021-Injection](https://owasp.org/Top10/A03_2021-Injection/)\n\n### Common Weakness Enumeration (CWE)\n\n- [CWE-327: Use of a Broken or Risky Cryptographic Algorithm](https://cwe.mitre.org/data/definitions/327.html)"
+              },
+              "properties": {
+                "tags": [
+                  "B324"
+                ]
+              }
+            },
+            {
+              "id": "glog-8d33a5ad-53e1-46cf-bf4d-dc6fdcd68258",
+              "help": {
+                "text": "",
+                "markdown": "### Description\n\nThe vulnerability arises from the use of the MD5 hashing algorithm for security purposes. MD5 is considered cryptographically broken and unsuitable for further use due to its vulnerability to collision attacks. In Python, the `hashlib` library provides a way to use MD5, but it should not be used for security-sensitive applications. The `usedforsecurity=False` flag is a consideration to indicate that the hash is not used for security purposes, but this does not mitigate the inherent weaknesses of MD5.\n\n### General Mitigation Advice\n\n1. **Avoid Using MD5 for Security**: Replace MD5 with a more secure hashing algorithm such as SHA-256 or SHA-3.\n2. **Use `hashlib` Securely**: When using the `hashlib` library, prefer secure algorithms like SHA-256.\n3. **Review Code for Security**: Regularly review and update your code to use secure cryptographic practices.\n\n### Source Code Fix Recommendation\n\nReplace the use of MD5 with a more secure hashing algorithm, such as SHA-256:\n\n```python\nimport hashlib\n\n# Original insecure code\n# md5 = hashlib.md5()\n\n# Secure code using SHA-256\nsha256 = hashlib.sha256()\n```\n\n### Library Dependencies\n\nTo execute the code example properly, the following library is required:\n\n- `hashlib`: This is a built-in library in Python, so no additional installation is necessary.\n\n### Relevant OWASP Resources\n\n- [OWASP Cryptographic Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)\n- [OWASP Top Ten 2021 - A03:2021-Injection](https://owasp.org/Top10/A03_2021-Injection/)\n\n### Common Weakness Enumeration (CWE)\n\n- [CWE-327: Use of a Broken or Risky Cryptographic Algorithm](https://cwe.mitre.org/data/definitions/327.html)"
+              },
+              "properties": {
+                "tags": [
+                  "B324"
+                ]
+              }
+            },
+            {
+              "id": "glog-4fbb9963-2701-49b5-887b-4a29aa231c72",
+              "help": {
+                "text": "",
+                "markdown": "### Description\n\nThe vulnerability arises from the use of the MD5 hashing algorithm for security purposes. MD5 is considered cryptographically broken and unsuitable for further use due to its vulnerability to collision attacks. In Python, the `hashlib` library provides a way to use MD5, but it should not be used for security-sensitive applications. The `usedforsecurity=False` flag is a consideration to indicate that the hash is not used for security purposes, but this does not mitigate the inherent weaknesses of MD5.\n\n### General Mitigation Advice\n\n1. **Avoid Using MD5 for Security**: Replace MD5 with a more secure hashing algorithm such as SHA-256 or SHA-3.\n2. **Use `hashlib` Securely**: When using the `hashlib` library, prefer secure algorithms like SHA-256.\n3. **Review Code for Security**: Regularly review and update your code to use secure cryptographic practices.\n\n### Source Code Fix Recommendation\n\nReplace the use of MD5 with a more secure hashing algorithm, such as SHA-256:\n\n```python\nimport hashlib\n\n# Original insecure code\n# md5 = hashlib.md5()\n\n# Secure code using SHA-256\nsha256 = hashlib.sha256()\n```\n\n### Library Dependencies\n\nTo execute the code example properly, the following library is required:\n\n- `hashlib`: This is a built-in library in Python, so no additional installation is necessary.\n\n### Relevant OWASP Resources\n\n- [OWASP Cryptographic Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)\n- [OWASP Top Ten 2021 - A03:2021-Injection](https://owasp.org/Top10/A03_2021-Injection/)\n\n### Common Weakness Enumeration (CWE)\n\n- [CWE-327: Use of a Broken or Risky Cryptographic Algorithm](https://cwe.mitre.org/data/definitions/327.html)"
+              },
+              "properties": {
+                "tags": [
+                  "B324"
+                ]
+              }
+            },
+            {
+              "id": "glog-0c004188-35fc-46e9-ab6a-5d6bd91afdba",
+              "help": {
+                "text": "",
+                "markdown": "### Description\n\nThe vulnerability arises from the use of the MD5 hashing algorithm for security purposes. MD5 is considered cryptographically broken and unsuitable for further use due to its vulnerability to collision attacks. In Python, the `hashlib` library provides a way to use MD5, but it should not be used for security-sensitive applications. The `usedforsecurity=False` flag is a consideration to indicate that the hash is not used for security purposes, but this does not mitigate the inherent weaknesses of MD5.\n\n### General Mitigation Advice\n\n1. **Avoid Using MD5 for Security**: Replace MD5 with a more secure hashing algorithm such as SHA-256 or SHA-3.\n2. **Use `hashlib` Securely**: When using the `hashlib` library, prefer secure algorithms like SHA-256.\n3. **Review Code for Security**: Regularly review and update your code to use secure cryptographic practices.\n\n### Source Code Fix Recommendation\n\nReplace the use of MD5 with a more secure hashing algorithm, such as SHA-256:\n\n```python\nimport hashlib\n\n# Original insecure code\n# md5 = hashlib.md5()\n\n# Secure code using SHA-256\nsha256 = hashlib.sha256()\n```\n\n### Library Dependencies\n\nTo execute the code example properly, the following library is required:\n\n- `hashlib`: This is a built-in library in Python, so no additional installation is necessary.\n\n### Relevant OWASP Resources\n\n- [OWASP Cryptographic Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)\n- [OWASP Top Ten 2021 - A03:2021-Injection](https://owasp.org/Top10/A03_2021-Injection/)\n\n### Common Weakness Enumeration (CWE)\n\n- [CWE-327: Use of a Broken or Risky Cryptographic Algorithm](https://cwe.mitre.org/data/definitions/327.html)"
+              },
+              "properties": {
+                "tags": [
+                  "B324"
+                ]
+              }
+            },
+            {
+              "id": "glog-213da3fa-32bb-4705-8d06-fa26d99bbb44",
+              "help": {
+                "text": "",
+                "markdown": "### Description\n\nThe vulnerability arises from the use of the MD5 hashing algorithm for security purposes. MD5 is considered cryptographically broken and unsuitable for further use due to its vulnerability to collision attacks. In Python, the `hashlib` library provides a way to use MD5, but it should not be used for security-sensitive applications. The `usedforsecurity=False` flag is a consideration to indicate that the hash is not used for security purposes, but this does not mitigate the inherent weaknesses of MD5.\n\n### General Mitigation Advice\n\n1. **Avoid Using MD5 for Security**: Replace MD5 with a more secure hashing algorithm such as SHA-256 or SHA-3.\n2. **Use `hashlib` Securely**: When using the `hashlib` library, prefer secure algorithms like SHA-256.\n3. **Review Code for Security**: Regularly review and update your code to use secure cryptographic practices.\n\n### Source Code Fix Recommendation\n\nReplace the use of MD5 with a more secure hashing algorithm, such as SHA-256:\n\n```python\nimport hashlib\n\n# Original insecure code\n# md5 = hashlib.md5()\n\n# Secure code using SHA-256\nsha256 = hashlib.sha256()\n```\n\n### Library Dependencies\n\nTo execute the code example properly, the following library is required:\n\n- `hashlib`: This is a built-in library in Python, so no additional installation is necessary.\n\n### Relevant OWASP Resources\n\n- [OWASP Cryptographic Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)\n- [OWASP Top Ten 2021 - A03:2021-Injection](https://owasp.org/Top10/A03_2021-Injection/)\n\n### Common Weakness Enumeration (CWE)\n\n- [CWE-327: Use of a Broken or Risky Cryptographic Algorithm](https://cwe.mitre.org/data/definitions/327.html)"
+              },
+              "properties": {
+                "tags": [
+                  "B324"
+                ]
+              }
+            },
+            {
+              "id": "glog-764fad48-f3f4-48e5-9592-118b1f9441fd",
+              "help": {
+                "text": "",
+                "markdown": "### Description\n\nThe vulnerability arises from the use of the MD5 hashing algorithm for security purposes. MD5 is considered cryptographically broken and unsuitable for further use due to its vulnerability to collision attacks. In the given code snippet, the MD5 hash is used to generate an identifier, which could be exploited by an attacker to produce the same hash value for different inputs, potentially leading to security breaches.\n\n### General Mitigation Advice\n\nTo mitigate this vulnerability, it is recommended to use a more secure hashing algorithm, such as SHA-256, which is part of the SHA-2 family. These algorithms are designed to be more resistant to collision and pre-image attacks.\n\n### Source Code Fix Recommendation\n\nReplace the use of MD5 with SHA-256 in the code. Here is the updated code snippet:\n\n```python\nimport hashlib\n\nid_suffix = hashlib.sha256(f\"{ts_hex}{client_instance_id}\".encode()).hexdigest()\n```\n\n### Library Dependencies\n\nThe code example requires the following standard library:\n\n- `hashlib`: This is a built-in Python library, so no additional installation is required.\n\n### Relevant OWASP Resources\n\n- [OWASP Cryptographic Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)\n- [OWASP Top Ten 2021 - A03:2021-Injection](https://owasp.org/Top10/A03_2021-Injection/)\n\n### Common Weakness Enumeration (CWE)\n\n- [CWE-327: Use of a Broken or Risky Cryptographic Algorithm](https://cwe.mitre.org/data/definitions/327.html)"
+              },
+              "properties": {
+                "tags": [
+                  "B324"
+                ]
+              }
+            },
+            {
+              "id": "glog-19f161be-c46c-4d1a-bdb5-179abd3aeceb",
+              "help": {
+                "text": "",
+                "markdown": "### Description\n\nDeserializing untrusted data using Python's `pickle` module can introduce significant security risks. The `pickle` module is inherently insecure when handling data from untrusted sources because it can execute arbitrary code during the deserialization process. This vulnerability can be exploited by attackers to execute malicious code, leading to potential data breaches, system compromise, or other malicious activities.\n\nIn the provided code snippet, the use of `pickle.loads(binary_data)` to deserialize `binary_data` into `order_book_tracker_data` is a security risk if `binary_data` is not from a trusted source.\n\n### General Mitigation Advice\n\n1. **Avoid Using `pickle` for Untrusted Data**: If possible, avoid using `pickle` to deserialize data from untrusted sources. Consider using safer alternatives like `json` or `yaml` for data serialization and deserialization.\n\n2. **Use `pickle` Safely**: If you must use `pickle`, ensure that the data being deserialized is from a trusted and verified source.\n\n3. **Use Restricted Unpickling**: Consider using libraries like `pickle5` or `restricted-unpickler` that provide more control over the deserialization process.\n\n4. **Implement Input Validation**: Validate and sanitize all inputs before processing them.\n\n### Source Code Fix Recommendation\n\nReplace the use of `pickle` with a safer alternative, such as `json`, if the data structure allows it. If `pickle` must be used, ensure the data is from a trusted source.\n\n```python\nimport json\nimport pandas as pd\nfrom typing import Dict, Tuple\n\n# Assuming binary_data is a JSON string instead of a pickle binary\nbinary_data = '{\"key\": [{\"column1\": [1, 2, 3]}, {\"column2\": [4, 5, 6]}]}'\n\n# Deserialize using json\norder_book_tracker_data: Dict[str, Tuple[pd.DataFrame, pd.DataFrame]] = {\n    key: (pd.DataFrame(value[0]), pd.DataFrame(value[1]))\n    for key, value in json.loads(binary_data).items()\n}\n```\n\n### Library Dependencies\n\nTo execute the code example properly, the following library dependencies are required:\n\n- `pandas`\n- `json` (part of Python's standard library)\n\n### Relevant Resources\n\n- [OWASP Deserialization Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Deserialization_Cheat_Sheet.html)\n- [CWE-502: Deserialization of Untrusted Data](https://cwe.mitre.org/data/definitions/502.html)"
+              },
+              "properties": {
+                "tags": [
+                  "B301"
+                ]
+              }
+            },
+            {
+              "id": "glog-8be6ea48-56d7-4bec-a853-607b0d600a60",
+              "help": {
+                "text": "",
+                "markdown": "### Description\n\nThe vulnerability arises from the use of the MD5 hashing algorithm for security purposes. MD5 is considered weak due to its susceptibility to collision attacks, where two different inputs produce the same hash output. This can lead to security vulnerabilities, especially if MD5 is used for cryptographic purposes such as password hashing or digital signatures.\n\n### General Mitigation Advice\n\nTo mitigate this vulnerability, it is recommended to use a more secure hashing algorithm, such as SHA-256, which provides a higher level of security against collision attacks. Additionally, ensure that the `usedforsecurity` parameter is set to `False` when using MD5 in contexts where security is not a concern, such as generating non-cryptographic checksums.\n\n### Source Code Fix Recommendation\n\nReplace the use of MD5 with SHA-256 for better security. Here is the updated code:\n\n```python\nimport platform\nimport os\nfrom hashlib import sha256\n\ndef secure_hash():\n    return sha256(f\"{platform.uname()}_pid:{os.getpid()}_ppid:{os.getppid()}\".encode(\"utf-8\")).hexdigest()\n```\n\n### Library Dependencies\n\nThe code example requires the following standard Python libraries to execute properly:\n\n- `platform`\n- `os`\n- `hashlib`\n\nThese libraries are part of the Python Standard Library and do not require additional installation.\n\n### Relevant OWASP Resources\n\n- [OWASP Cryptographic Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)\n- [OWASP Top Ten 2021](https://owasp.org/Top10/)\n\n### Common Weakness Enumeration (CWE)\n\n- [CWE-327: Use of a Broken or Risky Cryptographic Algorithm](https://cwe.mitre.org/data/definitions/327.html)"
+              },
+              "properties": {
+                "tags": [
+                  "B324"
+                ]
+              }
+            }
+          ],
+          "language": "en-US",
+          "contents": [
+            "localizedData",
+            "nonLocalizedData"
+          ],
+          "isComprehensive": false
+        }
+      },
+      "language": "en-US",
+      "results": [
+        {
+          "ruleId": "glog-e608fecc-2a55-4e94-aa8b-37cd099a5bbb",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Use of weak MD5 hash for security. Consider usedforsecurity=False"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "hummingbot/connector/derivative/derive_perpetual/derive_perpetual_derivative.py"
+                },
+                "region": {
+                  "startLine": 485,
+                  "startColumn": 15,
+                  "endLine": 485,
+                  "endColumn": 28,
+                  "snippet": {
+                    "text": "        md5 = hashlib.md5()\n"
+                  }
+                },
+                "contextRegion": {
+                  "startLine": 484,
+                  "endLine": 486,
+                  "snippet": {
+                    "text": "        )\n        md5 = hashlib.md5()\n        md5.update(order_id.encode('utf-8'))\n"
+                  }
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_severity": "HIGH",
+            "issue_confidence": "HIGH"
+          }
+        },
+        {
+          "ruleId": "glog-8fbdff15-fcb3-4f44-8abb-8ca22acccbd8",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Use of weak MD5 hash for security. Consider usedforsecurity=False"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "hummingbot/connector/derivative/hyperliquid_perpetual/hyperliquid_perpetual_derivative.py"
+                },
+                "region": {
+                  "startLine": 304,
+                  "startColumn": 15,
+                  "endLine": 304,
+                  "endColumn": 28,
+                  "snippet": {
+                    "text": "        md5 = hashlib.md5()\n"
+                  }
+                },
+                "contextRegion": {
+                  "startLine": 303,
+                  "endLine": 305,
+                  "snippet": {
+                    "text": "        )\n        md5 = hashlib.md5()\n        md5.update(order_id.encode('utf-8'))\n"
+                  }
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_severity": "HIGH",
+            "issue_confidence": "HIGH"
+          }
+        },
+        {
+          "ruleId": "glog-64b79ed8-fc5f-4c66-aeca-2dfafcfaea59",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Use of weak MD5 hash for security. Consider usedforsecurity=False"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "hummingbot/connector/derivative/derive_perpetual/derive_perpetual_derivative.py"
+                },
+                "region": {
+                  "startLine": 448,
+                  "startColumn": 15,
+                  "endLine": 448,
+                  "endColumn": 28,
+                  "snippet": {
+                    "text": "        md5 = hashlib.md5()\n"
+                  }
+                },
+                "contextRegion": {
+                  "startLine": 447,
+                  "endLine": 449,
+                  "snippet": {
+                    "text": "        )\n        md5 = hashlib.md5()\n        md5.update(order_id.encode('utf-8'))\n"
+                  }
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_severity": "HIGH",
+            "issue_confidence": "HIGH"
+          }
+        },
+        {
+          "ruleId": "glog-677ff6fd-8e8a-4483-8d3b-0a1609c6ebf2",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Use of weak MD5 hash for security. Consider usedforsecurity=False"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "hummingbot/connector/derivative/hyperliquid_perpetual/hyperliquid_perpetual_derivative.py"
+                },
+                "region": {
+                  "startLine": 343,
+                  "startColumn": 15,
+                  "endLine": 343,
+                  "endColumn": 28,
+                  "snippet": {
+                    "text": "        md5 = hashlib.md5()\n"
+                  }
+                },
+                "contextRegion": {
+                  "startLine": 342,
+                  "endLine": 344,
+                  "snippet": {
+                    "text": "        )\n        md5 = hashlib.md5()\n        md5.update(order_id.encode('utf-8'))\n"
+                  }
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_severity": "HIGH",
+            "issue_confidence": "HIGH"
+          }
+        },
+        {
+          "ruleId": "glog-8d33a5ad-53e1-46cf-bf4d-dc6fdcd68258",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Use of weak MD5 hash for security. Consider usedforsecurity=False"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "hummingbot/connector/exchange/derive/derive_exchange.py"
+                },
+                "region": {
+                  "startLine": 290,
+                  "startColumn": 15,
+                  "endLine": 290,
+                  "endColumn": 28,
+                  "snippet": {
+                    "text": "        md5 = hashlib.md5()\n"
+                  }
+                },
+                "contextRegion": {
+                  "startLine": 289,
+                  "endLine": 291,
+                  "snippet": {
+                    "text": "        )\n        md5 = hashlib.md5()\n        md5.update(order_id.encode('utf-8'))\n"
+                  }
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_severity": "HIGH",
+            "issue_confidence": "HIGH"
+          }
+        },
+        {
+          "ruleId": "glog-4fbb9963-2701-49b5-887b-4a29aa231c72",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Use of weak MD5 hash for security. Consider usedforsecurity=False"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "hummingbot/connector/exchange/hyperliquid/hyperliquid_exchange.py"
+                },
+                "region": {
+                  "startLine": 288,
+                  "startColumn": 15,
+                  "endLine": 288,
+                  "endColumn": 28,
+                  "snippet": {
+                    "text": "        md5 = hashlib.md5()\n"
+                  }
+                },
+                "contextRegion": {
+                  "startLine": 287,
+                  "endLine": 289,
+                  "snippet": {
+                    "text": "        )\n        md5 = hashlib.md5()\n        md5.update(order_id.encode('utf-8'))\n"
+                  }
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_severity": "HIGH",
+            "issue_confidence": "HIGH"
+          }
+        },
+        {
+          "ruleId": "glog-0c004188-35fc-46e9-ab6a-5d6bd91afdba",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Use of weak MD5 hash for security. Consider usedforsecurity=False"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "hummingbot/connector/exchange/hyperliquid/hyperliquid_exchange.py"
+                },
+                "region": {
+                  "startLine": 327,
+                  "startColumn": 15,
+                  "endLine": 327,
+                  "endColumn": 28,
+                  "snippet": {
+                    "text": "        md5 = hashlib.md5()\n"
+                  }
+                },
+                "contextRegion": {
+                  "startLine": 326,
+                  "endLine": 328,
+                  "snippet": {
+                    "text": "        )\n        md5 = hashlib.md5()\n        md5.update(order_id.encode('utf-8'))\n"
+                  }
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_severity": "HIGH",
+            "issue_confidence": "HIGH"
+          }
+        },
+        {
+          "ruleId": "glog-213da3fa-32bb-4705-8d06-fa26d99bbb44",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Use of weak MD5 hash for security. Consider usedforsecurity=False"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "hummingbot/connector/exchange/derive/derive_exchange.py"
+                },
+                "region": {
+                  "startLine": 329,
+                  "startColumn": 15,
+                  "endLine": 329,
+                  "endColumn": 28,
+                  "snippet": {
+                    "text": "        md5 = hashlib.md5()\n"
+                  }
+                },
+                "contextRegion": {
+                  "startLine": 328,
+                  "endLine": 330,
+                  "snippet": {
+                    "text": "        )\n        md5 = hashlib.md5()\n        md5.update(order_id.encode('utf-8'))\n"
+                  }
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_severity": "HIGH",
+            "issue_confidence": "HIGH"
+          }
+        },
+        {
+          "ruleId": "glog-764fad48-f3f4-48e5-9592-118b1f9441fd",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Use of weak MD5 hash for security. Consider usedforsecurity=False"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "hummingbot/connector/utils.py"
+                },
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 25,
+                  "endLine": 79,
+                  "endColumn": 70,
+                  "snippet": {
+                    "text": "            id_suffix = md5(f\"{ts_hex}{client_instance_id}\".encode()).hexdigest()\n"
+                  }
+                },
+                "contextRegion": {
+                  "startLine": 78,
+                  "endLine": 80,
+                  "snippet": {
+                    "text": "        if suffix_max_length < len(ts_hex):\n            id_suffix = md5(f\"{ts_hex}{client_instance_id}\".encode()).hexdigest()\n            client_order_id = f\"{id_prefix}{id_suffix[:suffix_max_length]}\"\n"
+                  }
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_severity": "HIGH",
+            "issue_confidence": "HIGH"
+          }
+        },
+        {
+          "ruleId": "glog-19f161be-c46c-4d1a-bdb5-179abd3aeceb",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Pickle and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "hummingbot/core/data_type/remote_api_order_book_data_source.py"
+                },
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 81,
+                  "endLine": 69,
+                  "endColumn": 106,
+                  "snippet": {
+                    "text": "        order_book_tracker_data: Dict[str, Tuple[pd.DataFrame, pd.DataFrame]] = pickle.loads(binary_data)\n"
+                  }
+                },
+                "contextRegion": {
+                  "startLine": 68,
+                  "endLine": 70,
+                  "snippet": {
+                    "text": "        binary_data: bytes = await response.read()\n        order_book_tracker_data: Dict[str, Tuple[pd.DataFrame, pd.DataFrame]] = pickle.loads(binary_data)\n        retval: Dict[str, OrderBookTrackerEntry] = {}\n"
+                  }
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_severity": "MEDIUM",
+            "issue_confidence": "HIGH"
+          }
+        },
+        {
+          "ruleId": "glog-8be6ea48-56d7-4bec-a853-607b0d600a60",
+          "kind": "fail",
+          "level": "error",
+          "message": {
+            "text": "Use of weak MD5 hash for security. Consider usedforsecurity=False"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "hummingbot/connector/utils.py"
+                },
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 12,
+                  "endLine": 47,
+                  "endColumn": 92,
+                  "snippet": {
+                    "text": "    return md5(f\"{platform.uname()}_pid:{os.getpid()}_ppid:{os.getppid()}\".encode(\"utf-8\")).hexdigest()\n"
+                  }
+                },
+                "contextRegion": {
+                  "startLine": 46,
+                  "endLine": 48,
+                  "snippet": {
+                    "text": "def _bot_instance_id() -> str:\n    return md5(f\"{platform.uname()}_pid:{os.getpid()}_ppid:{os.getppid()}\".encode(\"utf-8\")).hexdigest()\n\n"
+                  }
+                }
+              }
+            }
+          ],
+          "properties": {
+            "issue_severity": "HIGH",
+            "issue_confidence": "HIGH"
+          }
+        }
+      ],
+      "newlineSequences": [
+        "\r\n",
+        "\n"
+      ]
+    }
+  ]
+}
